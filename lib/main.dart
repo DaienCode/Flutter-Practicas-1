@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'Home',
       routes: {
         'Home': (BuildContext context) => const HomeScreen(),
-        'Home2': (BuildContext context) => const HomeScreen2(),
+        'Games': (BuildContext context) => GameScreen(),
         'Alert': (BuildContext context) => const AlertScreen()
       },
     );

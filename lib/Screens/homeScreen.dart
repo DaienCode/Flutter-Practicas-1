@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practica_1/Screens/homeScreen2.dart';
+import 'package:practica_1/Screens/gameScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -21,16 +21,20 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orangeAccent,
-        title: const Center(child: Text('Rank CV+ ')),
+        backgroundColor: Colors.indigoAccent,
+        title: const Center(child: Text('Games Utorrent 2022 ')),
         elevation: 0,
       ),
       body: ListView.separated(
-        itemCount: 20,
+        itemCount: 1,
         itemBuilder: (context, index) => ListTile(
           leading: const Icon(Icons.check_box_outlined),
           trailing: const Icon(Icons.arrow_forward_ios),
-          onTap: () {},
+          onTap: () {
+            //final route = MaterialPageRoute(builder: (context) => GameScreen());
+            //Navigator.push(context, route);
+            Navigator.pushNamed(context, 'Games');
+          },
           title: Text(
             '$games + $counter ',
             style: const TextStyle(fontSize: 20),
