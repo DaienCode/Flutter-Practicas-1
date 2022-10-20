@@ -33,7 +33,10 @@ class _HomeScreenState extends State<HomeScreen> {
           onTap: () {
             //final route = MaterialPageRoute(builder: (context) => GameScreen());
             //Navigator.push(context, route);
-            Navigator.pushNamed(context, 'Games');
+            // ignore: unnecessary_null_comparison
+            String Routess = 'Games';
+
+            Navigator.pushNamed(context, Routess);
           },
           title: Text(
             '$games + $counter ',
