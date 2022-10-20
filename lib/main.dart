@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practica_1/Routes/appRoutes.dart';
+
 import 'Screens/screens.dart';
 
 void main() => runApp(const MyApp());
